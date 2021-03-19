@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Blog from './components/Blog';
 import BlogDetail from './components/BlogDetail';
 import Category from './components/Category';
+import Portfolio from './components/Portfolio';
 
 
 const App = () => (
@@ -15,6 +16,7 @@ const App = () => (
                 <Route exact path='/blog' component={Blog} />
                 <Route exact path='/category/:id' component={Category} />
                 <Route exact path='/blog/:id' component={BlogDetail} />
+                <Route exact path='/portfolio' component={Portfolio} />
             </Switch>
         </Layout>
     </Router>

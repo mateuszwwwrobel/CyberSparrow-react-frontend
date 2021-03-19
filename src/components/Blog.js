@@ -86,11 +86,9 @@ const Blog = () => {
                     <Link className="p-2 link-secondary" to="/category/world">World</Link>
                     <Link className="p-2 link-secondary" to="/category/modelling">Modelling</Link>
                     <Link className="p-2 link-secondary" to="/category/technology">Technology</Link>
-                    <Link className="p-2 link-secondary" to="/category/design">Design</Link>
-                    <Link className="p-2 link-secondary" to="/category/culture">Culture</Link>
-                    <Link className="p-2 link-secondary" to="/category/opinion">Opinion</Link>
+                    <Link className="p-2 link-secondary" to="/category/history">History</Link>
                     <Link className="p-2 link-secondary" to="/category/science">Science</Link>
-                    <Link className="p-2 link-secondary" to="/category/health">Health</Link>
+                    <Link className="p-2 link-secondary" to="/category/python">Python</Link>
                     <Link className="p-2 link-secondary" to="/category/travel">Travel</Link>
                 </nav>
             </div>
