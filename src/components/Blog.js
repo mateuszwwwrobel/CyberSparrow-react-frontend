@@ -56,7 +56,7 @@ const Blog = () => {
                         <Link to={`/blog/${blogPost.slug}`} className="stretched-link">Continue reading</Link>
                     </div>
                     <div className="col-auto d-none d-lg-block">
-                        <img width="200" height="250" src={blogPost.thumbnail} alt='thumbnail' />
+                        <img width="200" height="250" src={blogPost.thumbnail} alt={blogPost.thumbnail_description} />
                     </div>
                 </div>
 
@@ -86,11 +86,9 @@ const Blog = () => {
                     <Link className="p-2 link-secondary" to="/category/world">World</Link>
                     <Link className="p-2 link-secondary" to="/category/modelling">Modelling</Link>
                     <Link className="p-2 link-secondary" to="/category/technology">Technology</Link>
-                    <Link className="p-2 link-secondary" to="/category/design">Design</Link>
-                    <Link className="p-2 link-secondary" to="/category/culture">Culture</Link>
-                    <Link className="p-2 link-secondary" to="/category/opinion">Opinion</Link>
+                    <Link className="p-2 link-secondary" to="/category/history">History</Link>
                     <Link className="p-2 link-secondary" to="/category/science">Science</Link>
-                    <Link className="p-2 link-secondary" to="/category/health">Health</Link>
+                    <Link className="p-2 link-secondary" to="/category/python">Python</Link>
                     <Link className="p-2 link-secondary" to="/category/travel">Travel</Link>
                 </nav>
             </div>
