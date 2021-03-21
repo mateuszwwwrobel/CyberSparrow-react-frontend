@@ -1,0 +1,86 @@
+body{
+    background-color: #E5E5E5;
+
+}
+
+.bg-yellow{
+    background-color: #FCA311;
+}
+
+.bg-navy{
+    background-color: #14213D;
+}
+
+.text-white{
+    color: #FFFFFF;
+}
+
+.btn-yellow{
+    font-weight: bold;
+    background: linear-gradient(
+        -45deg,
+        #FFFFFF 16.666%,
+        #FCA311 33.333%,
+        #FFFFFF 50%,
+        #FCA311 66.666%,
+        #FCA311 83.333%);
+    background-size: 50%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-name-animation-rev 0.5s ease forwards;
+}
+
+.btn-yellow:hover{
+    background-color: #eb9407;
+    animation: animate-name-animation 0.5s ease forwards;
+    cursor: pointer;
+}
+
+.animate-name{
+    font-weight: bold;
+    background: linear-gradient(
+        -45deg,
+        #FFFFFF 16.666%,
+        #FCA311 33.333%,
+        #FFFFFF 50%,
+        #FCA311 66.666%,
+        #FFFFFF 83.333%);
+    background-size: 50%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-name-animation-rev 0.5s ease forwards;
+}
+
+.animate-name:hover {
+  animation: animate-name-animation 0.5s ease forwards;
+}
+
+@keyframes animate-name-animation {
+  0% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+}
+
+@keyframes animate-name-animation-rev {
+  0% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+}
