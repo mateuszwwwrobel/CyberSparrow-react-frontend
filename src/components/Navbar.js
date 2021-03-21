@@ -22,10 +22,16 @@ const navbar = () => (
                         <NavLink className="nav-link active" aria-current="page" exact to="/">Home</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink className="nav-link" exact to="/blog">Blog</NavLink>
+                        <NavLink className="nav-link" exact to="/about">About Me</NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink className="nav-link" exact to="/portfolio">Portfolio</NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" exact to="/blog">Blog</NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink className="nav-link" exact to="/contact">Contact</NavLink>
                     </li>
                 </ul>
             </div>
