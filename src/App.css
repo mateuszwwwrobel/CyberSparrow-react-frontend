@@ -15,6 +15,14 @@ body{
     color: #FFFFFF;
 }
 
+.text-navy{
+    color: #14213D;
+}
+
+.text-navy:hover{
+    color: #E5E5E5;
+}
+
 .btn-yellow{
     font-weight: bold;
     background: linear-gradient(
