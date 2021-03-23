@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSpring, animated as a } from 'react-spring';
 
@@ -15,12 +15,12 @@ const Home = () => {
             <h1>Hi, my name is <span className="animate-name">Mateusz Wrobel</span></h1>
             <p className="lead">I am Junior Python Developer.</p>
             <p className="lead">If you want to know something more about me, have a look at
-                <Link to="/category/about">
+                <Link to="/about">
                     <a.span style={buttonProps} className="btn btn-yellow btn-lg text-dark">About Me</a.span>
                 </Link>
                 section.</p>
             <p className="lead">You can find some of my projects in
-                <Link to="/category/portfolio">
+                <Link to="/portfolio">
                     <a.span style={buttonProps} className="btn btn-yellow btn-lg text-dark">Portfolio</a.span>
                 </Link>
                 section.</p>
