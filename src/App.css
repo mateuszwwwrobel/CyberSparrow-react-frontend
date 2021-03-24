@@ -23,6 +23,16 @@ body{
     color: #E5E5E5;
 }
 
+.text-justify{
+    text-align: justify;
+}
+
+.image-fit{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
 .btn-yellow{
     font-weight: bold;
     background: linear-gradient(
