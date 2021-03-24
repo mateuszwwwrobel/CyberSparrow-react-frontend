@@ -115,8 +115,8 @@ const About = () => {
                         <animated.h1 style={featuredBlogProps} className="display-4 fst-italic">Every day brings new choices.</animated.h1>
                         <animated.p style={featuredBlogProps} className="lead my-3">`All things are diffucult before they are easy.`</animated.p>
                     </div>
-                    <div className="col-md-6">
-                        <img className="image-fit" src="https://www.w3schools.com/w3css/img_lights.jpg" alt="image"/>
+                    <div className="col-md-6 d-none d-md-block">
+                        <img className="image-fit" src="https://www.w3schools.com/w3css/img_lights.jpg" alt="myself"/>
                     </div>
                 </div>
             </div>
