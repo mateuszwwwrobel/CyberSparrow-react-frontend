@@ -52,7 +52,7 @@ const Blog = () => {
                             {capitalizeFirstLetter(blogPost.category)}
                         </strong>
                         <h3 className="mb-0">{blogPost.title}</h3>
-                        <div className="mb-1 text-muted">{blogPost.month} {blogPost.day}</div>
+                        <div className="mb-1 text-muted">{blogPost.day} {blogPost.month} {blogPost.year}</div>
                         <p className="card-text mb-auto">{blogPost.excerpt}</p>
                         <Link to={`/blog/${blogPost.slug}`} className="stretched-link">Continue reading</Link>
                     </div>
@@ -60,7 +60,6 @@ const Blog = () => {
                         <img width="200" height="250" src={blogPost.thumbnail} alt={blogPost.thumbnail_description} />
                     </div>
                 </div>
-
             );
         });
 
