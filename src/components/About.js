@@ -1,9 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import {useSpring, animated} from 'react-spring';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faPython, faReact, faCss3Alt, faJsSquare} from '@fortawesome/free-brands-svg-icons';
-import {faDatabase} from '@fortawesome/free-solid-svg-icons';
 
 
 const About = () => {
