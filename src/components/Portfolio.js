@@ -71,7 +71,7 @@ const Portfolio = () => {
     const getIcons = (icons) => {
         let result = [];
         icons.forEach(icon => {
-            result.push(<FontAwesomeIcon className="mx-2" icon={icon} size="lg"/>)
+            result.push(<FontAwesomeIcon className="mx-2 spiral" icon={icon} size="lg"/>)
         })
         return result;
     }
@@ -86,12 +86,8 @@ const Portfolio = () => {
                     <div className="col p-4 d-flex flex-column position-static">
                         <div>
                             {getIcons(project.icons)}
-                        </div>
-                        <motion.h3
-                            animate={{ x: 25 }}
-                            transition={{ ease: "easeOut", duration: 2 }}
-                            className="mb-0 btn-yellow">{project.title}
-                        </motion.h3>
+                        </div >
+                        <h3 className="mb-0 btn-yellow">{project.title}</h3>
                         <p className="card-text my-4">{project.description}</p>
                         <strong>Build with:</strong>
                         <p className="card-text">{project.technologies}</p>
@@ -100,7 +96,7 @@ const Portfolio = () => {
                         <Link className="w-50 btn-yellow" target="_blank" to={{pathname: project.github_link, state: {fromDashboard: true}}}>Github
                             repo</Link>
                     </div>
-                    <motion.div transition={{ type: "spring", stiffness: 150 }} whileHover={{ scale: 1.5, transition: { duration: .5 }  }} className="col-md-6 d-none d-lg-block p-3">
+                    <motion.div transition={{ type: "spring", stiffness: 150 }} whileHover={{ scale: 1.5, transition: { duration: .5 } }} className="col-md-6 d-none d-lg-block p-3">
                         <img className="image-fit-projects"
                              src={project.image}
                              alt='project preview'/>
