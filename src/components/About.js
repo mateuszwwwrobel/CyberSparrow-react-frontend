@@ -1,41 +1,84 @@
-import React, {useState, useEffect} from 'react';
-import axios from 'axios';
+import React from 'react';
 import {useSpring, animated} from 'react-spring';
 
 
 const About = () => {
-    const [experiences, setExperiences] = useState([]);
-    const [education, setEducation] = useState([]);
 
-    useEffect(() => {
-        const fetchExperiences = async () => {
-            try {
-                const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/resume/experience/`);
-                setExperiences(response.data);
-            } catch (err) {
-            }
-        }
-        fetchExperiences();
-    }, []);
+    const education = [
+        {
+            "title": "Junior Python Developer",
+            "school": "Infoshare Academy",
+            "start_date": "Aug 2020",
+            "finish_date": "Mar 2021",
+            "final_project": "link do projektu finalnego.",
+            "description": "The training comprised 240 workshop hours. It provided knowledge and practical skills in the field of: Python, Django, REST API, Docker, Jenkins, SQL, Scrum.",
+        },
+        {
+            "title": "Web Design",
+            "school": "North East Scotland College",
+            "start_date": "Sep 2019",
+            "finish_date": "Mar 2020",
+            "description": "The training provided knowledge and practical skills in the field of: HTML, CSS, basic JavaScript.",
+        },
+        {
+            "title": "MSc: Drilling and Geoengineering",
+            "school": "AGH University of Science and Technology",
+            "start_date": "Feb 2016",
+            "finish_date": "Jun 2017",
+            "final_project": "Diploma thesis: “Surfactants in completion and workover fluids.”",
+            "description": "opis",
+        },
+        {
+            "title": "BSc: Mining and Geology",
+            "school": "AGH University of Science and Technology",
+            "start_date": "Oct 2012",
+            "finish_date": "Feb 2016",
+            "final_project": "Diploma thesis: `Alternative method of using a baryte from drilling mud`",
+            "description": "opis",
+        },
+    ]
 
+    const experiences = [
+        {
+            "title": "Freelance Software Developer",
+            "company": "MW Software Development Services",
+            "start_date": "Jan 2021",
+            "finish_date": "now",
+            "name": "",
+            "description": "opis",
+        },
+        {
+            "title": "Field and Laboratory Technician",
+            "company": "Raeburn Drilling and Geotechnical",
+            "start_date": "Jan 2020",
+            "finish_date": "now",
+            "name": "",
+            "description": "opis",
+        },
+        {
+            "title": "Sub-Contractor",
+            "company": "MW Construction",
+            "start_date": "Jun 2018",
+            "finish_date": "Jan 2020",
+            "name": "",
+            "description": "opis",
+        },
+        {
+            "title": "Assistant Engineering Surveyor",
+            "company": "G79 Geodesy",
+            "start_date": "Jan 2018",
+            "finish_date": "Jun 2018",
+            "name": "",
+            "description": "opis",
+        },
+    ]
 
-    useEffect(() => {
-        const fetchEducation = async () => {
-            try {
-                const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/resume/education/`);
-                setEducation(response.data);
-            } catch (err) {
-            }
-        }
-        fetchEducation();
-    }, []);
 
     const getEducation = () => {
-        let list = [];
         let result = [];
 
         education.map(Education => {
-            return list.push(
+            return result.push(
                 <div className="card mb-3 bg-yellow">
                     <h5 className="card-header">{Education.title}</h5>
                     <div className="card-body text-white bg-navy">
@@ -48,28 +91,14 @@ const About = () => {
             );
         });
 
-        for (let i = 0; i < list.length; i += 2) {
-            result.push(
-                <div key={i} className="row mb-2 ">
-                    <div className="col-md-10 w-100">
-                        {list[i]}
-                    </div>
-                    <div className="col-md-10 w-100">
-                        {list[i + 1] ? list[i + 1] : null}
-                    </div>
-                </div>
-            )
-        }
-
         return result;
     };
 
     const getExperiences = () => {
-        let list = [];
         let result = [];
 
         experiences.map(Experience => {
-            return list.push(
+            return result.push(
                 <div className="card mb-3 bg-yellow">
                     <h5 className="card-header">{Experience.title}</h5>
                     <div className="card-body text-white bg-navy">
@@ -81,19 +110,6 @@ const About = () => {
                 </div>
             );
         });
-
-        for (let i = 0; i < list.length; i += 2) {
-            result.push(
-                <div key={i} className="row mb-2">
-                    <div className="col-md-10 w-100">
-                        {list[i]}
-                    </div>
-                    <div className="col-md-10 w-100">
-                        {list[i + 1] ? list[i + 1] : null}
-                    </div>
-                </div>
-            )
-        }
         return result;
     };
 
@@ -109,8 +125,12 @@ const About = () => {
             <div className="p-4 p-md-5 mb-4 text-white rounded bg-navy">
                 <div className="row px-0">
                     <div className="col-md-6">
-                        <animated.h1 style={featuredBlogProps} className="display-4 fst-italic">Every day brings new choices.</animated.h1>
-                        <animated.p style={featuredBlogProps} className="lead my-3">`All things are diffucult before they are easy.`</animated.p>
+                        <animated.h1 style={featuredBlogProps} className="display-4 fst-italic">Every day brings new
+                            choices.
+                        </animated.h1>
+                        <animated.p style={featuredBlogProps} className="lead my-3">`All things are diffucult before
+                            they are easy.`
+                        </animated.p>
                     </div>
                     <div className="col-md-6 d-none d-md-block">
                         <img className="image-fit" src="https://www.w3schools.com/w3css/img_lights.jpg" alt="myself"/>
@@ -151,6 +171,7 @@ const About = () => {
         </div>
     );
 
-};
+}
+    ;
 
-export default About;
+    export default About;
