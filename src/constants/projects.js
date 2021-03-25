@@ -57,9 +57,9 @@ const Projects = [
             "technologies": "Django, Django REST framework, React, Allauth, Bootstrap.",
             "demo_link": "",
             "icons": [faReact, faPython, faDatabase, faBootstrap, faJsSquare],
-            "github_link": "",
+            "github_link": "https://github.com/mateuszwwwrobel/PersonalWebsite-django-backend",
             "image": "",
-            "demo": "Demo",
+            "demo": "It is a website you are looking at. Feel free to explore it.",
         },
     ]
 

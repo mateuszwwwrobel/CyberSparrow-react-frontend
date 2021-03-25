@@ -29,7 +29,7 @@ const Portfolio = () => {
                         <p className="card-text my-4">{project.description}</p>
                         <strong>Build with:</strong>
                         <p className="card-text">{project.technologies}</p>
-                        <Link className="w-25 btn-yellow" target="_blank"
+                        <Link className="w-75 btn-yellow text-justify" target="_blank"
                               to={{pathname: project.demo_link, state: {fromDashboard: true}}}>{project.demo}</Link>
                         <Link className="w-50 btn-yellow" target="_blank" to={{pathname: project.github_link, state: {fromDashboard: true}}}>Github
                             repo</Link>
