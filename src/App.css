@@ -148,3 +148,11 @@ body{
   0% { -o-transform: rotate(360deg); }
   100% { -o-transform: rotate(0deg); }
 }
+
+.expandable{
+display: none;
+}
+
+.expand:hover+.expandable{
+display:inline !important;
+}
