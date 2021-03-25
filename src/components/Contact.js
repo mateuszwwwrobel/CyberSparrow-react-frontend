@@ -1,20 +1,30 @@
 import React from 'react';
-import { useSpring, animated } from 'react-spring';
+import {motion} from "framer-motion";
 
 
 const Contact = () => {
-    const props = useSpring({
-        opacity: 1,
-        marginTop: 0,
-        from: { opacity:0, marginTop: -500,}
-    });
+    const [isActive, setIsActive] = React.useState(false);
 
     return (
-        <animated.div style={props} className='container'>
-            <p>Contact</p>
-        </animated.div>
-    );
-
+        <motion.div
+            whileHover={{scale: 1.1}}
+            whileTap={{scale: 0.9}}
+            style={{x: -250, y: -100}}
+            className="contact-box"
+            onClick={() => setIsActive(!isActive)}
+            animate={{
+                x: 0,
+                y: 0,
+                backgroundColor: "#14213D",
+                boxShadow: "5px 5px 0 rgba(0, 0, 0, 0.2)",
+            }}
+            transition={{type: "spring", damping: 10, stiffness: 10}}>
+            <div className="btn-yellow">
+                <h4>Feel free to contact with me via email address specify below:</h4>
+                <p>mateusz.wwwrobel@gmail.com</p>
+            </div>
+        </motion.div>
+    )
 };
 
 export default Contact;

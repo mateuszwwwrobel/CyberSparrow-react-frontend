@@ -10,7 +10,7 @@ const Navbar = () => {
     });
 
     return (
-    <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-yellow">
+    <nav className="navbar sticky-top navbar-expand-md navbar-light bg-yellow">
         <div className="container-fluid">
             <Link className="nav-link" aria-current="page" exact to="/">
                 <img className="img-fluid" src={'/assets/logo_sparrow_small.png'} alt="logo"/>

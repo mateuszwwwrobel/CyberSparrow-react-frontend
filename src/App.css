@@ -156,3 +156,13 @@ display: none;
 .expand:hover+.expandable{
 display:inline !important;
 }
+
+.contact-box{
+    margin: 35px auto auto auto;
+    width: 40vh;
+    height: auto;
+    padding: 3vh;
+    align-items: center;
+    text-align: center;
+}
+
