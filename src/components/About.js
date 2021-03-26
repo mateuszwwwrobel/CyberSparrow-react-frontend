@@ -6,8 +6,6 @@ import education from '../constants/education';
 import experiences from '../constants/experiences';
 
 const About = () => {
-    const [isActive, setIsActive] = React.useState(false);
-
     const getEducation = () => {
         let result = [];
 
