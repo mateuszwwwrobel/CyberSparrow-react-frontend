@@ -24,7 +24,7 @@ const Footer = () => {
                     </Link>
                 </div>
                 <div className="col-12 mt-3">
-                    <p>Created by: Mateusz Wrobel</p>
+                    <p>&copy; Copyright {new Date().getFullYear()}, Wrobel Mateusz</p>
                 </div>
             </div>
         </div>
