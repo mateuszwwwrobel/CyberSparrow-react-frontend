@@ -62,7 +62,29 @@ body{
     animation: animate-name-animation-rev 0.5s ease forwards;
 }
 
+
+.btn-navy{
+    font-weight: bold;
+    background: linear-gradient(
+        -45deg,
+        #848ae3 16.666%,
+        #14213D 33.333%,
+        #848ae3 50%,
+        #14213D 66.666%,
+        #848ae3 83.333%);
+    background-size: 50%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-name-animation-rev 0.5s ease forwards;
+}
+
 .btn-yellow:hover{
+    background-color: #eb9407;
+    animation: animate-name-animation 0.5s ease forwards;
+    cursor: pointer;
+}
+
+.btn-navy:hover{
     background-color: #eb9407;
     animation: animate-name-animation 0.5s ease forwards;
     cursor: pointer;

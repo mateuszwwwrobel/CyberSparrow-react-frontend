@@ -78,17 +78,7 @@ const Category = (props) => {
     return (
         <div className="container mt-3">
             <h3 className="display-4">{currentCategory} Category</h3>
-            <div className="nav-scroller py-1 mb-2">
-                <nav className="nav d-flex justify-content-between">
-                    <Link className="p-2 link-secondary" to="/category/world">World</Link>
-                    <Link className="p-2 link-secondary" to="/category/modelling">Modelling</Link>
-                    <Link className="p-2 link-secondary" to="/category/technology">Technology</Link>
-                    <Link className="p-2 link-secondary" to="/category/history">History</Link>
-                    <Link className="p-2 link-secondary" to="/category/science">Science</Link>
-                    <Link className="p-2 link-secondary" to="/category/python">Python</Link>
-                    <Link className="p-2 link-secondary" to="/category/travel">Travel</Link>
-                </nav>
-            </div>
+            <hr />
             {getCategoryBlogs()}
         </div>
     );

@@ -86,25 +86,8 @@ const Blog = () => {
         from: { opacity:0, marginLeft: -3500,},
     });
 
-    const categoryProps = useSpring({
-        opacity: 1,
-        from: { opacity:0 },
-        config: {delay: 1000, duration: 1000}
-    });
-
     return (
         <div className="container mt-3">
-            <animated.div style={categoryProps} className="nav-scroller py-1 mb-2">
-                <nav className="nav d-flex justify-content-between">
-                    <Link className="p-2 link-secondary" to="/category/world">World</Link>
-                    <Link className="p-2 link-secondary" to="/category/modelling">Modelling</Link>
-                    <Link className="p-2 link-secondary" to="/category/technology">Technology</Link>
-                    <Link className="p-2 link-secondary" to="/category/history">History</Link>
-                    <Link className="p-2 link-secondary" to="/category/science">Science</Link>
-                    <Link className="p-2 link-secondary" to="/category/python">Python</Link>
-                    <Link className="p-2 link-secondary" to="/category/travel">Travel</Link>
-                </nav>
-            </animated.div>
             <div className="p-4 p-md-5 mb-4 text-white rounded bg-navy">
                 <animated.div style={featuredBlogProps} className="col-md-6 px-0">
                     <h1 className="display-4 fst-italic">{featuredBlog.title}</h1>

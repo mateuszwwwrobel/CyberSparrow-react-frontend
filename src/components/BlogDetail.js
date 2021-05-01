@@ -37,7 +37,7 @@ const Blog_detail = (props) => {
             <h4>{blog.month} {blog.day}</h4>
             <div className="my-5" dangerouslySetInnerHTML={createBlog()} />
             <hr />
-            <p className="lead mb-5"><Link to="/blog" className="font-weight-bold">Back to Blogs</Link></p>
+            <p className="lead mb-5"><Link to="/" className="font-weight-bold">Back to Blogs</Link></p>
         </div>
     );
 };
